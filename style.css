@@ -1,0 +1,122 @@
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d2eff5;
+}
+
+header {
+    background-color: #d2eff5;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+header span {
+    color: rgb(212, 137, 212);
+}
+header:hover {
+    color: pink;
+}
+header span:hover {
+    color: purple;
+}
+
+.cards-table {
+    width: 90%;
+    border-collapse: separate;
+    border-spacing: 14px; /* Added to create gaps between the cards */
+    margin: 15px auto;
+}
+
+.cards-table td {
+    padding: 0; /* Removed padding to eliminate the white line */
+    text-align: center;
+    vertical-align: top;
+}
+
+.card {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.card .rating {
+    font-size: 1.2em;
+    color: #ffa500;
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .cards-table {
+        width: 95%;
+        border-spacing: 12px;
+    }
+    .card {
+        padding: 10px;
+    }
+    .card h2 {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 992px) {
+    .cards-table {
+        width: 100%;
+        border-spacing: 10px;
+    }
+    .card {
+        padding: 8px;
+    }
+    .card h2 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-table {
+        width: 100%;
+        border-spacing: 8px;
+    }
+    .card {
+        padding: 6px;
+    }
+    .card h2 {
+        font-size: 0.9em;
+    }
+    .card .rating {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 576px) {
+    .cards-table {
+        width: 100%;
+        border-spacing: 6px;
+    }
+    .card {
+        padding: 4px;
+    }
+    .card h2 {
+        font-size: 0.8em;
+    }
+    .card .rating {
+        font-size: 0.9em;
+    }
+}
